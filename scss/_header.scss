@@ -1,0 +1,60 @@
+
+.header {
+    height: 108px;
+    .container {
+        .flex_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            h1 {
+                width: 70px;
+                height: 74.38px;
+                .logo_link {
+                    img {
+
+                    }
+                }
+            }
+            .nav_header {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    li {
+                        padding-right: 30px;
+                        &:last-child {
+                            padding-right: 0px;
+                        }
+                        a {
+                            font-family: "Roboto";
+                            color: #212529;
+                            font-size: 18px;
+                            transition: all .8s;
+                            opacity: 1;
+
+                            &:hover {
+                                cursor: pointer;
+                                opacity: .5;
+                                transition: all .8s;
+                            }
+                        }
+                    }
+                }
+            }
+            .number_header {
+                a {
+                    font-family: "Roboto";
+                    color: #212529;
+                    font-size: 18px;
+                    transition: all .8s;
+                    opacity: 1;
+
+                        &:hover {
+                            cursor: pointer;
+                            opacity: .5;
+                            transition: all .8s;
+                        }
+                }
+            }
+        }
+    }
+}
