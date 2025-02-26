@@ -1,6 +1,6 @@
 
 .header {
-    height: 108px;
+    height: 80px;
     .container {
         .flex_container {
             display: flex;
@@ -9,11 +9,6 @@
             h1 {
                 width: 70px;
                 height: 74.38px;
-                .logo_link {
-                    img {
-
-                    }
-                }
             }
             .nav_header {
                 ul {
@@ -28,6 +23,7 @@
                             font-family: "Roboto";
                             color: #212529;
                             font-size: 18px;
+                            font-weight: 400;
                             transition: all .8s;
                             opacity: 1;
 
@@ -44,6 +40,7 @@
                 a {
                     font-family: "Roboto";
                     color: #212529;
+                    font-weight: 400;
                     font-size: 18px;
                     transition: all .8s;
                     opacity: 1;

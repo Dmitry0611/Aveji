@@ -1,0 +1,79 @@
+
+.info {
+    margin-top: 120px;
+    .container {
+        .info_first_block {
+            display: flex;
+            .info_left {
+                width: 50.7%;
+                h2 {
+                    font-family: "Helvetica";
+                    font-weight: 400;
+                    font-size: 48px;
+                    color: #212529;
+                }
+            }
+            .info_right {
+                p {
+                    padding-bottom: 16px;
+                    &:first-child {
+                        margin-top: 29px;
+                    }
+                }
+                .padding {
+                    padding-bottom: 0px;
+                }
+                .description {
+                    .descrpn_first{
+                        .year {
+
+                        }
+                        p {
+
+                        }
+                    }
+                    .descrpn_second {
+                        .number {
+
+                        }
+                        p {
+
+                        }
+                    }
+                    .descrpn_third {
+                        .days {
+
+                        }
+                        p {
+
+                        }
+                    }
+                }
+            }
+        }
+        .info_second_block {
+            .info_second_left {
+                h2 {
+
+                }
+            }
+            .info_second_right {
+                p {
+
+                }
+                .services {
+                    .services_left {
+                        h4 {
+
+                        }
+                    }
+                    .services_right {
+                        p {
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
