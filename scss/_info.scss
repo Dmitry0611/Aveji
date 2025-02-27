@@ -15,6 +15,10 @@
             }
             .info_right {
                 p {
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #212529;
                     padding-bottom: 16px;
                     &:first-child {
                         margin-top: 29px;
@@ -24,52 +28,113 @@
                     padding-bottom: 0px;
                 }
                 .description {
+                    margin-top: 44px;
                     .descrpn_first{
                         .year {
-
+                            font-family: "Helvetica";
+                            font-weight: 400;
+                            font-size: 36px;
+                            color: #212529;
                         }
                         p {
-
+                            font-family: "Helvetica";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #212529;
+                            line-height: 140%;
+                            padding: 0;
                         }
                     }
                     .descrpn_second {
+                        margin-top: 24px;
                         .number {
-
+                            font-family: "Helvetica";
+                            font-weight: 400;
+                            font-size: 36px;
+                            color: #212529;
                         }
                         p {
-
+                            font-family: "Helvetica";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #212529;
+                            line-height: 140%;
+                            padding: 0;
                         }
                     }
                     .descrpn_third {
+                        margin-top: 24px;
                         .days {
-
+                            font-family: "Helvetica";
+                            font-weight: 400;
+                            font-size: 36px;
+                            color: #212529;
                         }
                         p {
-
+                            font-family: "Helvetica";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #212529;
+                            line-height: 140%;
+                            padding: 0;
                         }
                     }
                 }
             }
         }
         .info_second_block {
+            margin-top: 120px;
+            display: flex;
             .info_second_left {
+                width: 50.7%;
                 h2 {
-
+                    font-family: "Helvetica";
+                    font-weight: 400;
+                    font-size: 48px;
+                    color: #212529;
                 }
             }
             .info_second_right {
+                width: 49.3%;
+                margin-top: 22px;
                 p {
-
+                    font-family: "Roboto";
+                    font-weight: 400;
+                    font-size: 16px;
+                    color: #212529;
+                    line-height: 140%;
                 }
                 .services {
+                    margin-top: 44px;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 24px;
+                    border-bottom: solid 1px #212529;
                     .services_left {
                         h4 {
-
+                            font-family: "Helvetica";
+                            font-weight: 400;
+                            font-size: 36px;
+                            color: #212529;
+                            line-height: 140%;
                         }
                     }
                     .services_right {
                         p {
-
+                            font-family: "Roboto";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #212529;
+                            line-height: 140%;
+                        }
+                        .padd1 {
+                            padding-right: 7px;
+                        }
+                        .padd2 {
+                            padding-right: 10px;
+                        }
+                        .padd3 {
+                            padding-right: 27px;
                         }
                     }
                 }
