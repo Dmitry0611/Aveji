@@ -1,0 +1,24 @@
+
+.projects {
+    margin-top: 120px;
+    .container {
+        h2 {
+            font-family: "Helvetica";
+            font-weight: 400;
+            font-size: 48px;
+            color: #212529;
+        }
+        .first_line_images {
+            margin-top: 32px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .seconds_line_images {
+            display: flex;
+            justify-content: space-between;
+            .image {
+                margin-top: 20px;
+            }
+        }
+    }
+}

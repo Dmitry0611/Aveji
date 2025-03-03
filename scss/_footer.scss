@@ -4,9 +4,6 @@
     .container {
         .footer_flex {
             display: flex;
-            .footer_flex_left {
-
-            }
             .footer_flex_right {
                 margin-top: 22px;
                 margin-left: 136px;
@@ -37,7 +34,6 @@
                         font-weight: 400;
                         font-size: 16px;
 
-
                         &::placeholder {
                             color: #212529;
                         }
@@ -48,15 +44,18 @@
                     }
                     .btn_form {
                         margin-top: 24px;
+                        font-family: "Roboto";
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #ffff;
+                        background-color: #212529;
+                        border: none;
+                        width: 176px;
+                        height: 46px;
                     }
                 }
                 .link_store {
                     margin-top: 40px;
-                    a {
-                        img {
-
-                        }
-                    }
                 }
             }
         }
