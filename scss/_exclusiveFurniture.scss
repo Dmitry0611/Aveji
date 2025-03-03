@@ -29,11 +29,13 @@
                 border-bottom: solid 1px #212529;
                 opacity: 1;
                 transition: all .8s;
+                transform: scale(1);
 
                 &:hover {
                     cursor: pointer;
                     opacity: .7;
                     transition: all .8s;
+                    transform: scale(1.05);
                 }
             }
         }
@@ -53,6 +55,24 @@
                 img {
                     display: inline-block;
                     margin-top: 232px;
+                    transform: scale(1);
+                    transition: .7s;
+
+                    &:hover {
+                        transition: .7s;
+                        transform: scale(1.05);
+                    }
+                }
+            }
+            .header_section_right {
+                img {
+                    transform: scale(1);
+                    transition: .7s;
+
+                    &:hover {
+                        transition: .7s;
+                        transform: scale(1.05);
+                    }
                 }
             }
         }

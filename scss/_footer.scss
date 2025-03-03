@@ -52,6 +52,14 @@
                         border: none;
                         width: 176px;
                         height: 46px;
+                        transform: scale(1);
+                        transition: .7s;
+
+                        &:hover {
+                            cursor: pointer;
+                            transition: .7s;
+                            transform: scale(1.05);
+                        }
                     }
                 }
                 .link_store {

@@ -12,12 +12,28 @@
             margin-top: 32px;
             display: flex;
             justify-content: space-between;
+            .image {
+                transform: scale(1);
+                transition: .7s;
+
+                &:hover {
+                    transition: .7s;
+                    transform: scale(1.05);
+                }
+            }
         }
         .seconds_line_images {
             display: flex;
             justify-content: space-between;
             .image {
                 margin-top: 20px;
+                transform: scale(1);
+                transition: .7s;
+
+                &:hover {
+                    transition: .7s;
+                    transform: scale(1.05);
+                }
             }
         }
     }

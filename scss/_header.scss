@@ -19,6 +19,13 @@
                         &:last-child {
                             padding-right: 0px;
                         }
+                        transform: scale(1);
+                        transition: .7s;
+
+                        &:hover {
+                            transition: .7s;
+                            transform: scale(1.2);
+                        }
                         a {
                             font-family: "Roboto";
                             color: #212529;
