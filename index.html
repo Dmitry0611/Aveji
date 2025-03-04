@@ -8,11 +8,11 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="header">
+    <header id="home" class="header">
         <div class="container">
             <div class="flex_container">
                 <h1>
-                    <a class="logo_link" href="#">
+                    <a class="logo_link" href="#home">
                         <img src="/images/logo.png" alt="logo">
                     </a>
                 </h1>
@@ -262,10 +262,13 @@
                         Оставьте заявку, и мы вам перезвоним
                     </p>
                     <form action="#">
-                        <input placeholder="Имя" type="text">
-                        <input placeholder="E-mail" type="text">
-                        <input placeholder="Телефон" type="text">
-                        <button class="btn_form">Отправить заявку</button>
+                        <input class="name" required placeholder="Имя" type="text">
+
+                        <input class="email" required placeholder="E-mail" type="email">
+
+                        <input class="phone" required placeholder="Телефон" type="tel">
+
+                        <button type="submit" class="btn_form">Отправить заявку</button>
                     </form>
                     <div class="link_store">
                         <a target="_blank" href="https://www.apple.com/by/app-store/">
@@ -279,6 +282,26 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal show hide">
+        <div class="modal_dialog">
+            <div class="modal_content">
+                <form action="#">
+                    <div class="modal_close">&times;</div>
+                    <h3>
+                        Оставьте заявку, и мы вам перезвоним!
+                    </h3>
+                    <input class="name" required placeholder="Имя" type="text">
+
+                    <input class="email" required placeholder="E-mail" type="email">
+
+                    <input class="phone" required placeholder="Телефон" type="tel">
+
+                    <button type="submit" class="btn_form">Отправить заявку</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
    <script src="js/app.js"></script>
 </body>
