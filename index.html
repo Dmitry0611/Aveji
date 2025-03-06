@@ -261,14 +261,20 @@
                     <p>
                         Оставьте заявку, и мы вам перезвоним
                     </p>
-                    <form action="#">
+                    <form class="footer_form" action="#">
+
                         <input class="name" required placeholder="Имя" type="text">
+                        <span class="error-message" id="footerNameError"></span>
 
                         <input class="email" required placeholder="E-mail" type="email">
+                        <span class="error-message" id="footerEmailError"></span>
 
                         <input class="phone" required placeholder="Телефон" type="tel">
+                        <span class="error-message" id="footerPhoneError"></span>
 
                         <button type="submit" class="btn_form">Отправить заявку</button>
+                        <span id="footerSuccessMessage" class="success-message"></span>
+
                     </form>
                     <div class="link_store">
                         <a target="_blank" href="https://www.apple.com/by/app-store/">
@@ -286,18 +292,24 @@
     <div class="modal show hide">
         <div class="modal_dialog">
             <div class="modal_content">
-                <form action="#">
+                <form class="modal_form" action="#">
                     <div class="modal_close">&times;</div>
                     <h3>
                         Оставьте заявку, и мы вам перезвоним!
                     </h3>
+
                     <input class="name" required placeholder="Имя" type="text">
+                    <span class="error-message" id="modalNameError"></span>
 
                     <input class="email" required placeholder="E-mail" type="email">
+                    <span class="error-message" id="modalEmailError"></span>
 
                     <input class="phone" required placeholder="Телефон" type="tel">
+                    <span class="error-message" id="modalPhoneError"></span>
 
                     <button type="submit" class="btn_form">Отправить заявку</button>
+                    <span id="modalSuccessMessage" class="success-message"></span>
+
                 </form>
             </div>
         </div>
