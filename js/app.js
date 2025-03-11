@@ -1,5 +1,4 @@
 window.addEventListener('DOMContentLoaded', (e) => {
-    e.preventDefault();
 
     // Behavior Smooth
     const anchors = document.querySelectorAll('a[href^="#"]');
@@ -8,7 +7,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
 
-            const targetId = this.getAttribute('href').substring(1);
+            const targetId = e.currentTarget.getAttribute('href').substring(1);
             const targetElement = document.getElementById(targetId);
 
             window.scrollTo({
@@ -59,22 +58,30 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const formModal = document.querySelector('.modal_form');
     const formFooter = document.querySelector('.footer_form');
 
-    let nameError, emailError, phoneError, successMessage;
-    let form, name, email, phone;
+    let successMessage;
+    let form;
 
     const emailRegEx = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
     const phoneRegEx = /^\+?[0-9]{1,15}$/;
 
     function validateForm(form) {
-
         let isValid = true;
+
+        const name = form.querySelector('.name').value.trim();
+        const phone = form.querySelector('.phone').value.trim();;
+        const email = form.querySelector('.email').value.trim();;
+
+        const nameError = form.querySelector('#footerNameError') || form.querySelector('#modalNameError');
+        const emailError = form.querySelector('#footerEmailError') || form.querySelector('#modalEmailError');
+        const phoneError = form.querySelector('#footerPhoneError') || form.querySelector('#modalPhoneError');
+
 
         nameError.textContent = '';
         emailError.textContent = '';
         phoneError.textContent = '';
 
         // Name check
-        if (!name.trim()) {
+        if (!name) {
             nameError.textContent = 'Пожалуйста, введите ваше имя';
             isValid = false;
         } else if (/\d/.test(name)) {
@@ -98,25 +105,17 @@ window.addEventListener('DOMContentLoaded', (e) => {
     };
 
     function showMessage() {
-        successMessage.textContent = 'Форма успешно отправлена!'
+        successMessage.textContent = 'Ваша заявка успешно отправлена!'
         successMessage.classList.add('show');
     };
 
     function formSubmit(event) {
-
         event.preventDefault();
         form = event.target;
 
-        name = form.querySelector('.name')
-        phone = form.querySelector('.phone');
-        email = form.querySelector('.email');
-
-        nameError = form.querySelector('#footerNameError') || form.querySelector('#modalNameError');
-        emailError = form.querySelector('#footerEmailError') || form.querySelector('#modalEmailError');
-        phoneError = form.querySelector('#footerPhoneError') || form.querySelector('#modalPhoneError');
         successMessage = form.querySelector('.success-message');
 
-        if (validateForm) {
+        if (validateForm(form)) {
             form.reset();
             showMessage();
         };

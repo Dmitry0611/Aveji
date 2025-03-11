@@ -42,6 +42,14 @@
                             margin-top: 0;
                         }
                     }
+                    .error-message {
+                        font-family: "Roboto";
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #212529;
+                        display: block;
+                        margin-top: 15px;
+                    }
                     .btn_form {
                         margin-top: 24px;
                         font-family: "Roboto";
@@ -60,6 +68,14 @@
                             transition: .7s;
                             transform: scale(1.05);
                         }
+                    }
+                    .success-message {
+                        font-family: "Roboto";
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #212529;
+                        display: block;
+                        margin-top: 15px;
                     }
                 }
                 .link_store {
