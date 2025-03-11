@@ -123,4 +123,35 @@ window.addEventListener('DOMContentLoaded', (e) => {
 
     formFooter.addEventListener('submit', formSubmit);
     formModal.addEventListener('submit', formSubmit);
+
+
+    //  Counter
+
+    const numberCounter = document.querySelector('#number_project');
+    const daysCounter = document.querySelector('#days');
+    let startedCounter = false;
+
+    function startCounter(number, selector) {
+        let count = 0;
+        let interval = setInterval(() => {
+            count++;
+            selector.textContent = count;
+
+            if (count === number ) {
+                clearInterval(interval);
+            }
+        },10);
+    }
+
+    startCounter();
+    window.addEventListener('scroll', () => {
+        let counterBlock = document.querySelector('.description');
+        let rect = counterBlock.getBoundingClientRect();
+
+        if (rect.top <= window.innerHeight && !startedCounter) {
+            startCounter(300,numberCounter);
+            startCounter(15, daysCounter);
+            startedCounter = true;
+        }
+    });
 })
