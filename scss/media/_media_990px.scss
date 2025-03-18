@@ -1,0 +1,161 @@
+
+@media (max-width: 1024px) {
+
+    // Header
+    .header {
+        .container  {
+            .flex_container {
+                padding: 0 50px;
+            }
+        }
+    }
+
+    // Exclusive furniture
+    .exclusive_furniture {
+        width: 100%;
+        .container {
+            width: 1024px;
+            padding: 0 50px;
+
+            .header_section_main {
+                h2 {
+                    font-size: 50px;
+                }
+                .order_project {
+                    &:hover {
+                        pointer-events: none;
+                    }
+                }
+            }
+            .header_section_flex  {
+                display: block;
+                .header_section_left {
+                    display: block;
+                    p {
+                        padding-bottom: 40px;
+                    }
+                    img {
+                        display: none;
+                        transform: none;
+                        transition: none;
+                        &:hover {
+                            pointer-events: none;
+                            transform: none;
+                            transition: none;
+                        }
+                    }
+                }
+                .header_section_right {
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        transform: none;
+                        transition: none;
+                        &:hover {
+                            pointer-events: none;
+                            transform: none;
+                            transition: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Info
+    .info{
+        .container {
+            width: 1024px;
+            padding: 0 50px;
+            .info_first_block {
+                .info_left {
+                    width: 45%;
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+            }
+            .info_second_block {
+                .info_second_left {
+                    width: 35%;
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
+                .info_second_right {
+                    width: 65%;
+                    .services {
+                        .services_left {
+                            h4 {
+                                font-size: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Projects
+    .projects {
+        .container {
+            width: 1024px;
+            padding: 0 50px;
+            h2 {
+                font-size: 30px;
+            }
+            .first_line_images {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                .image {
+                    transform: none;
+                    transition: none;
+                        &:hover {
+                            pointer-events: none;
+                            transform: none;
+                            transition: none;
+                        }
+                        &:nth-child(3) {
+                           display: block;
+                           margin: 0 auto;
+                           margin-top: 30px;
+                        }
+                }
+            }
+            .seconds_line_images {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                .image {
+                    transform: none;
+                    transition: none;
+                        &:hover {
+                            pointer-events: none;
+                            transform: none;
+                            transition: none;
+                        }
+                        &:nth-child(3) {
+                           display: block;
+                           margin: 0 auto;
+                           margin-top: 30px;
+                        }
+                }
+            }
+        }
+    }
+
+    //Reviews
+    .reviews  {
+        .container {
+            h2 {
+
+            }
+            .flex_container  {
+                display: block;
+            }
+        }
+    }
+}
