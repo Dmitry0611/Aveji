@@ -150,11 +150,43 @@
     //Reviews
     .reviews  {
         .container {
+            width: 1024px;
+            padding: 0 50px;
             h2 {
-
+                font-size: 30px;
             }
             .flex_container  {
-                display: block;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .card {
+                    width: 400px;
+                    &:nth-child(3) {
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Footer
+    .footer {
+        .container {
+            width: 1024px;
+            padding: 0 50px;
+            .footer_flex {
+                .footer_flex_left {
+                    img {
+                        width: 400px;
+                        height: 404px;
+                    }
+                }
+                .footer_flex_right {
+                    h2 {
+                        font-size: 30px;
+                    }
+                }
             }
         }
     }

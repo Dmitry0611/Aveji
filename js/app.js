@@ -25,32 +25,32 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const modalTimerId = setTimeout(openModal,3000);
 
 
-    function openModal () {
-        modal.classList.add('show');
-        modal.classList.remove('hide');
-        clearInterval(modalTimerId);
-    };
+    // function openModal () {
+    //     modal.classList.add('show');
+    //     modal.classList.remove('hide');
+    //     clearInterval(modalTimerId);
+    // };
 
-    function closeModal () {
-        modal.classList.add('hide');
-        modal.classList.remove('show');
-    }
+    // function closeModal () {
+    //     modal.classList.add('hide');
+    //     modal.classList.remove('show');
+    // }
 
-    modalOpen.addEventListener('click', openModal);
+    // modalOpen.addEventListener('click', openModal);
 
-    modalClose.addEventListener('click', closeModal);
+    // modalClose.addEventListener('click', closeModal);
 
-    modal.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            closeModal();
-        }
-    });
+    // modal.addEventListener('click', (e) => {
+    //     if (e.target === modal) {
+    //         closeModal();
+    //     }
+    // });
 
-    document.addEventListener('keydown', (e) => {
-        if (e.code === 'Escape' && modal.classList.contains('show')) {
-            closeModal();
-        }
-    });
+    // document.addEventListener('keydown', (e) => {
+    //     if (e.code === 'Escape' && modal.classList.contains('show')) {
+    //         closeModal();
+    //     }
+    // });
 
 
     // Valid Form
