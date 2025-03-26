@@ -25,32 +25,32 @@ window.addEventListener('DOMContentLoaded', (e) => {
     const modalTimerId = setTimeout(openModal,3000);
 
 
-    // function openModal () {
-    //     modal.classList.add('show');
-    //     modal.classList.remove('hide');
-    //     clearInterval(modalTimerId);
-    // };
+    function openModal () {
+        modal.classList.add('show');
+        modal.classList.remove('hide');
+        clearInterval(modalTimerId);
+    };
 
-    // function closeModal () {
-    //     modal.classList.add('hide');
-    //     modal.classList.remove('show');
-    // }
+    function closeModal () {
+        modal.classList.add('hide');
+        modal.classList.remove('show');
+    }
 
-    // modalOpen.addEventListener('click', openModal);
+    modalOpen.addEventListener('click', openModal);
 
-    // modalClose.addEventListener('click', closeModal);
+    modalClose.addEventListener('click', closeModal);
 
-    // modal.addEventListener('click', (e) => {
-    //     if (e.target === modal) {
-    //         closeModal();
-    //     }
-    // });
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
 
-    // document.addEventListener('keydown', (e) => {
-    //     if (e.code === 'Escape' && modal.classList.contains('show')) {
-    //         closeModal();
-    //     }
-    // });
+    document.addEventListener('keydown', (e) => {
+        if (e.code === 'Escape' && modal.classList.contains('show')) {
+            closeModal();
+        }
+    });
 
 
     // Valid Form
@@ -154,4 +154,22 @@ window.addEventListener('DOMContentLoaded', (e) => {
             startedCounter = true;
         }
     });
-})
+
+    // Burger menu
+
+    const nav = document.querySelector('.nav_header');
+    const burgerMenu = document.querySelector('.burger_menu');
+    const navLinks = document.querySelectorAll('.nav_header ul li a');
+
+    burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('open');
+        nav.classList.toggle('open');
+    });
+
+    navLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            burgerMenu.classList.remove('open');
+            nav.classList.remove('open');
+        });
+    });
+});

@@ -57,11 +57,45 @@
                     transition: all .8s;
                     opacity: 1;
 
-                        &:hover {
-                            cursor: pointer;
-                            opacity: .5;
-                            transition: all .8s;
-                        }
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .5;
+                        transition: all .8s;
+                    }
+                }
+            }
+            .burger_menu {
+                position: relative;
+                width: 35px;
+                height: 30px;
+                flex-direction: column;
+                transition: all .3s ease;
+                display: none;
+
+                .first_line {
+                    position: absolute;
+                    display: block;
+                    width: 35px;
+                    height: 3px;
+                    background-color: black;
+                    border-radius: 10px;
+                }
+                .second_line {
+                    position: absolute;
+                    display: block;
+                    width: 35px;
+                    height: 3px;
+                    background-color: black;
+                    border-radius: 10px;
+                    margin-top: 12px;
+                }
+                .third_line {
+                    display: block;
+                    width: 35px;
+                    height: 3px;
+                    background-color: black;
+                    border-radius: 10px;
+                    margin-top: 24px;
                 }
             }
         }
