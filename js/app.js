@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
         modal.classList.add('show');
         modal.classList.remove('hide');
         clearInterval(modalTimerId);
-    };
+   };
 
     function closeModal () {
         modal.classList.add('hide');
@@ -95,7 +95,7 @@ window.addEventListener('DOMContentLoaded', (e) => {
             isValid = false;
         }
 
-        //Phone check
+        // Phone check
         if(!phoneRegEx.test(phone)) {
             phoneError.textContent = 'Пожалуйста, введите номер телефона корректно!';
             isValid = false;

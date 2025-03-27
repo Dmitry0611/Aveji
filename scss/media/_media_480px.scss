@@ -1,0 +1,79 @@
+@media (max-width: 480px) {
+    //Header
+    .header {
+        height: 41px;
+        .container {
+            width: 100%;
+            padding: 0 16px;
+            .flex_container {
+                padding: 0 0;
+                h1 {
+                    a {
+                        img {
+                            width: 39px;
+                            height: 41px;
+                        }
+                    }
+                }
+                .number_header {
+                    display: none;
+                }
+                .burger_menu {
+                    width: 24px;
+                    &.open {
+                        .first_line  {
+                            transform: rotate(45deg);
+                            top: 12px;
+                        }
+                    }
+                    .first_line {
+                        width: 24px;
+                        height: 2px;
+                    }
+                    .second_line {
+                        width: 24px;
+                        height: 2px;
+                        margin-top: 6px;
+                    }
+                    .third_line {
+                        width: 24px;
+                        height: 2px;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Exclusive furniture
+    .exclusive_furniture {
+        margin-top: 80px;
+        .container {
+            max-width: 100%;
+            padding: 0 16px;
+            margin: 0 auto;
+            .header_section_main {
+                display: block;
+                h2 {
+                    font-size: 32px;
+                }
+                .order_project {
+                    margin-top: 20px;
+                }
+            }
+            .header_section_flex  {
+                .header_section_left {
+                    width: 100%;
+                }
+                .header_section_right  {
+                    img {
+                        width: 343px;
+                        height: 261px;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+}
