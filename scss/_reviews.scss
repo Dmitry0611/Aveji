@@ -10,9 +10,9 @@
         }
         .flex_container {
             display: flex;
-            justify-content: space-between;
+
             .card {
-                width: 445px;
+                flex-basis: 32%;
                 height: 327px;
                 border: solid 2px #212529;
                 margin-top: 32px;

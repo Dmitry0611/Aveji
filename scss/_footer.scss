@@ -4,82 +4,88 @@
     .container {
         .footer_flex {
             display: flex;
-            .footer_flex_right {
-                margin-top: 22px;
-                margin-left: 136px;
-                h2 {
-                    font-family: "Helvetica";
-                    font-weight: 400;
-                    font-size: 48px;
-                    color: #212529;
-                }
-                p {
-                    font-family: "Roboto";
-                    font-weight: 400;
-                    font-size: 16px;
-                    color: #212529;
-                    line-height: 140%;
-                    margin-top: 32px;
-                }
-                form {
-                    margin-top: 72px;
-                    input {
-                        display: block;
-                        margin-top: 16px;
-                        width: 100%;
-                        border: none;
-                        padding-bottom: 12.5px;
-                        border-bottom: solid 1px #212529;
+            .footer_flex_left {
+                flex-basis: 40%;
+            }
+            .footer_flex_block {
+                .footer_flex_right {
+                    flex-basis: 41%;
+                    margin-top: 22px;
+                    margin-left: 136px;
+                    h2 {
+                        font-family: "Helvetica";
+                        font-weight: 400;
+                        font-size: 48px;
+                        color: #212529;
+                    }
+                    p {
+                        font-family: "Roboto";
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #212529;
+                        line-height: 140%;
+                        margin-top: 32px;
+                    }
+                    form {
+                        margin-top: 72px;
+                        input {
+                            display: block;
+                            margin-top: 16px;
+                            width: 100%;
+                            border: none;
+                            padding-bottom: 12.5px;
+                            border-bottom: solid 1px #212529;
 
-                        &::placeholder {
+                            &::placeholder {
+                                font-family: "Roboto";
+                                font-weight: 400;
+                                font-size: 16px;
+                                color: #212529;
+                            }
+
+                            &:first-child {
+                                margin-top: 0;
+                            }
+                        }
+                        .error-message {
                             font-family: "Roboto";
                             font-weight: 400;
                             font-size: 16px;
                             color: #212529;
+                            display: block;
+                            margin-top: 15px;
                         }
-
-                        &:first-child {
-                            margin-top: 0;
-                        }
-                    }
-                    .error-message {
-                        font-family: "Roboto";
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #212529;
-                        display: block;
-                        margin-top: 15px;
-                    }
-                    .btn_form {
-                        margin-top: 24px;
-                        font-family: "Roboto";
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #ffff;
-                        background-color: #212529;
-                        border: none;
-                        width: 176px;
-                        height: 46px;
-                        transform: scale(1);
-                        transition: .7s;
-
-                        &:hover {
-                            cursor: pointer;
+                        .btn_form {
+                            margin-top: 24px;
+                            font-family: "Roboto";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #ffff;
+                            background-color: #212529;
+                            border: none;
+                            width: 176px;
+                            height: 46px;
+                            transform: scale(1);
                             transition: .7s;
-                            transform: scale(1.05);
+
+                            &:hover {
+                                cursor: pointer;
+                                transition: .7s;
+                                transform: scale(1.05);
+                            }
+                        }
+                        .success-message {
+                            font-family: "Roboto";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #212529;
+                            display: block;
+                            margin-top: 15px;
                         }
                     }
-                    .success-message {
-                        font-family: "Roboto";
-                        font-weight: 400;
-                        font-size: 16px;
-                        color: #212529;
-                        display: block;
-                        margin-top: 15px;
+                    .link_store {
+                        margin-top: 40px;
                     }
-                }
-                .link_store {
-                    margin-top: 40px;
                 }
             }
         }

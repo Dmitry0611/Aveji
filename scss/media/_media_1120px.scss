@@ -1,22 +1,19 @@
 
-@media (max-width: 1024px) {
+@media (max-width: 1120px) {
 
     // Header
     .header {
         .container  {
             .flex_container {
-                padding: 0 50px;
+
             }
         }
     }
 
     // Exclusive furniture
     .exclusive_furniture {
-        width: 100%;
         .container {
-            width: 1024px;
-            padding: 0 50px;
-
+            width: 100%;
             .header_section_main {
                 h2 {
                     font-size: 50px;
@@ -65,13 +62,20 @@
     //Info
     .info{
         .container {
-            width: 1024px;
-            padding: 0 50px;
             .info_first_block {
+                justify-content: space-between;
                 .info_left {
-                    width: 45%;
+                    flex-basis: 40%;
                     h2 {
                         font-size: 30px;
+                    }
+                }
+                .info_right_block {
+                    flex-basis: 50%;
+                    display: flex;
+                    justify-content: right;
+                    .info_right {
+                        flex-basis: 100%;
                     }
                 }
             }
@@ -99,8 +103,6 @@
     //Projects
     .projects {
         .container {
-            width: 1024px;
-            padding: 0 50px;
             h2 {
                 font-size: 30px;
             }
@@ -150,16 +152,17 @@
     //Reviews
     .reviews  {
         .container {
-            width: 1024px;
-            padding: 0 50px;
             h2 {
                 font-size: 30px;
             }
             .flex_container  {
-                flex-direction: row;
+                display: flex;
                 flex-wrap: wrap;
+                flex-direction: row;
+                justify-content: space-between;
                 .card {
-                    width: 400px;
+                    flex-basis: 445px;
+
                     &:nth-child(3) {
                         display: block;
                         margin: 0 auto;
@@ -174,18 +177,22 @@
     .footer {
         padding-bottom: 50px;
         .container {
-            width: 1024px;
-            padding: 0 50px;
             .footer_flex {
+                display: block;
                 .footer_flex_left {
                     img {
-                        width: 400px;
-                        height: 404px;
+                        display: none;
                     }
                 }
-                .footer_flex_right {
-                    h2 {
-                        font-size: 30px;
+                .footer_flex_block {
+                    display: flex;
+                    justify-content: center;
+                    .footer_flex_right {
+                        flex-basis: 50%;
+                        margin-left: 0;
+                        h2 {
+                            font-size: 30px;
+                        }
                     }
                 }
             }

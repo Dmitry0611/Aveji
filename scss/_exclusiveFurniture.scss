@@ -7,6 +7,7 @@
             justify-content: space-between;
             align-items: end;
             h2 {
+                flex-basis: 51%;
                 font-family: "Helvetica";
                 font-size: 72px;
                 color: #212529;
@@ -14,28 +15,35 @@
                 text-transform: uppercase;
                 line-height: 120%;
             }
-            .order_project {
-                font-family: "Roboto";
-                font-size: 18px;
-                color: #212529;
-                font-weight: 400;
-                background-color: transparent;
-                border: none;
-                text-align: end;
-                padding: 0;
-                width: 164px;
-                height: 23px;
-                text-transform: uppercase;
-                border-bottom: solid 1px #212529;
-                opacity: 1;
-                transition: all .8s;
-                transform: scale(1);
+            .order_project_block {
+                flex-basis: 48%;
+                display: flex;
+                justify-content: right;
+                .order_project {
 
-                &:hover {
-                    cursor: pointer;
-                    opacity: .7;
+                    font-family: "Roboto";
+                    font-size: 18px;
+                    color: #212529;
+                    font-weight: 400;
+                    background-color: transparent;
+                    border: none;
+                    text-align: end;
+                    padding: 0;
+                    width: 164px;
+                    height: 23px;
+                    text-transform: uppercase;
+                    border-bottom: solid 1px #212529;
+
+                    opacity: 1;
                     transition: all .8s;
-                    transform: scale(1.05);
+                    transform: scale(1);
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: .7;
+                        transition: all .8s;
+                        transform: scale(1.05);
+                    }
                 }
             }
         }
@@ -44,7 +52,7 @@
             justify-content: space-between;
             margin-top: 40px;
             .header_section_left {
-                width: 50%;
+                flex-basis: 50%;
                 p {
                     font-family: "Roboto";
                     font-size: 20px;
@@ -65,6 +73,7 @@
                 }
             }
             .header_section_right {
+                flex-basis: 49%;
                 img {
                     transform: scale(1);
                     transition: .7s;

@@ -1,0 +1,90 @@
+@media (max-width: 1395px) {
+    //Header
+    .header {
+        .container {
+            padding: 0 50px;
+        }
+    }
+
+    //Exclusive_furniture
+    .exclusive_furniture {
+        .container {
+            padding: 0 50px;
+            .header_section_main {
+                h2 {
+                    flex-basis: 85%;
+                }
+                .order_project_block {
+                    flex-basis: 15%;
+                }
+            }
+        }
+    }
+
+    //Info
+    .info {
+        .container {
+            padding: 0 50px;
+        }
+    }
+    //Projects
+    .projects {
+        .container {
+            padding: 0 50px;
+            .first_line_images {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                .image {
+                    transform: none;
+                    transition: none;
+                        &:hover {
+                            pointer-events: none;
+                            transform: none;
+                            transition: none;
+                        }
+                        &:nth-child(3) {
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 30px;
+                        }
+                }
+            }
+            .seconds_line_images {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-top: 30px;
+                .image {
+                    transform: none;
+                    transition: none;
+                        &:hover {
+                            pointer-events: none;
+                            transform: none;
+                            transition: none;
+                        }
+                        &:nth-child(3) {
+                        display: block;
+                        margin: 0 auto;
+                        margin-top: 30px;
+                        }
+                }
+            }
+        }
+    }
+
+    //Reviews
+    .reviews {
+        .container {
+            padding: 0 50px;
+        }
+    }
+
+    //Footer
+    .footer {
+        .container {
+            padding: 0 50px;
+        }
+    }
+}

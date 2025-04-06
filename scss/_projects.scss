@@ -13,6 +13,7 @@
             display: flex;
             justify-content: space-between;
             .image {
+                flex-basis: 30%;
                 transform: scale(1);
                 transition: .7s;
 
@@ -26,6 +27,7 @@
             display: flex;
             justify-content: space-between;
             .image {
+                flex-basis: 30%;
                 margin-top: 20px;
                 transform: scale(1);
                 transition: .7s;
