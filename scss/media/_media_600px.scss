@@ -1,0 +1,33 @@
+@media (max-width: 600px) {
+
+    //Header
+    .header {
+        .container {
+            .flex_container {
+                .nav_header {
+                    ul {
+                        li {
+                            padding-bottom: 60px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Exclusive furniture
+    .exclusive_furniture {
+        .container {
+            .header_section_main {
+                display: block;
+                .order_project_block {
+                    margin-top: 20px;
+                    justify-content: left;
+                    .order_project {
+
+                    }
+                }
+            }
+        }
+    }
+}

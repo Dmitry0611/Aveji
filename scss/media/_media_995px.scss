@@ -1,0 +1,91 @@
+@media (max-width: 995px) {
+
+    //Info
+    .info {
+        .container {
+            .info_second_block {
+                display: block;
+                .info_second_right {
+                    margin: 0 auto;
+                    padding-top: 40px;
+                }
+            }
+        }
+    }
+
+    //Projects
+    .projects {
+        .container {
+            .first_line_images {
+                display: block;
+                .image {
+                    text-align: center;
+
+                    &:nth-child(2) {
+                        margin-top: 20px;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+            .seconds_line_images {
+                display: block;
+                .image {
+                    text-align: center;
+
+                    &:nth-child(2) {
+                        margin-top: 20px;
+                    }
+
+                    &:nth-child(3) {
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Reviews
+    .reviews {
+        .container {
+            .flex_container {
+                display: block;
+                .card {
+                    margin: 0 auto;
+                    width: 60%;
+                    &:nth-child(1) {
+                        margin-top: 40px;
+                    }
+                    &:nth-child(2) {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+
+    //Footer
+    .footer {
+        .container {
+            .footer_links {
+                margin-top: 50px;
+                .footer_links_flex {
+                    display: block;
+                    .footer_logo {
+                        text-align: center;
+                    }
+                    .footer_rules {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                    .footer_social {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

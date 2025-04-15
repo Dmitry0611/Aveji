@@ -1,5 +1,6 @@
 
 @media (max-width: 768px) {
+    //Header
     .header {
         .container {
             .flex_container {
@@ -58,6 +59,108 @@
                             transform: rotate(-45deg);
                             bottom: 10px;
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    //Exclusive furniture
+    .exclusive_furniture {
+        .container {
+            .header_section_main {
+                h2 {
+                    font-size: 40px;
+                }
+            }
+            .header_section_flex {
+                .header_section_left {
+                    p {
+                        font-size: 18px;
+                    }
+                }
+                .header_section_right {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //Info
+    .info {
+        .container {
+            .info_first_block {
+                display: block;
+                .info_right_block {
+                    .info_right {
+                        p {
+                            text-align: center;
+                        }
+                        .description {
+                            .descrpn_first {
+                                span {
+                                    display: block;
+                                    text-align: center;
+                                }
+                                p {
+                                    padding-top: 20px;
+                                }
+                            }
+                            .descrpn_second {
+                                span {
+                                    display: block;
+                                    text-align: center;
+                                }
+                                p {
+                                    padding-top: 20px;
+                                }
+                            }
+                            .descrpn_third {
+                                span {
+                                    display: block;
+                                    text-align: center;
+                                }
+                                p {
+                                    padding-top: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .info_second_block {
+                .info_second_right {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+
+    //Reviews
+    .reviews {
+        .container {
+            .flex_container {
+                .card {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    //Footer
+    .footer {
+        .container {
+            .footer_flex {
+                .footer_flex_left {
+                    display: none;
+                }
+                .footer_flex_block {
+
+                    .footer_flex_right {
+                        flex-basis: 100%;
                     }
                 }
             }

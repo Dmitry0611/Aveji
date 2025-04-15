@@ -10,6 +10,7 @@
         }
         .flex_container {
             display: flex;
+            justify-content: space-between;
 
             .card {
                 flex-basis: 32%;

@@ -89,5 +89,46 @@
                 }
             }
         }
+        .footer_links {
+            margin-top: 120px;
+            margin-bottom: 16px;
+            .footer_links_flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: end;
+                .footer_logo {
+                    p {
+                        font-family: "Roboto";
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #212529;
+                        text-transform: uppercase;
+                    }
+                }
+                .footer_rules {
+                    p {
+                        font-family: "Roboto";
+                        font-weight: 400;
+                        font-size: 16px;
+                        color: #212529;
+                    }
+                }
+                .footer_social {
+                    p {
+                        a {
+                            font-family: "Roboto";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #212529;
+                            text-transform: uppercase;
+
+                            &:last-child {
+                                margin-left: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
