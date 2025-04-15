@@ -1,44 +1,49 @@
 @media (max-width: 480px) {
     //Header
     .header {
-        height: 41px;
         .container {
             width: 100%;
             padding: 0 16px;
             .flex_container {
+                height: 60px;
                 padding: 0 0;
                 h1 {
+                    width: 50px;
+                    height: 54px;
                     a {
                         img {
-                            width: 39px;
-                            height: 41px;
+                            width: 50px;
+                            height: 54px;
                         }
                     }
+                }
+                .nav_header {
+                    width: 100%;
                 }
                 .number_header {
                     display: none;
                 }
                 .burger_menu {
-                    width: 24px;
+                    width: 28px;
                     &.open {
                         .first_line  {
                             transform: rotate(45deg);
-                            top: 12px;
+                            top: 19px;
                         }
                     }
                     .first_line {
-                        width: 24px;
-                        height: 2px;
+                        width: 28px;
+                        height: 3px;
                     }
                     .second_line {
-                        width: 24px;
-                        height: 2px;
-                        margin-top: 6px;
+                        width: 28px;
+                        height: 3px;
+                        margin-top: 10px;
                     }
                     .third_line {
-                        width: 24px;
-                        height: 2px;
-                        margin-top: 12px;
+                        width: 28px;
+                        height: 3px;
+                        margin-top: 20px;
                     }
                 }
             }
@@ -58,7 +63,7 @@
                     font-size: 32px;
                 }
                 .order_project {
-                    margin-top: 20px;
+                    margin-top: 0;
                 }
             }
             .header_section_flex  {
@@ -67,13 +72,91 @@
                 }
                 .header_section_right  {
                     img {
-                        width: 343px;
-                        height: 261px;
-                        margin: 0;
+                        width: 100%;
+
                     }
                 }
             }
         }
     }
 
+    //Info
+    .info {
+        .container {
+            max-width: 100%;
+            padding: 0 16px;
+            .info_first_block {
+                .info_left {
+                    h2 {
+
+                    }
+                }
+                .info_right_block {
+                    .info_right {
+                        p {
+                            text-align: left;
+                        }
+                        .description {
+                            .descrpn_first {
+                                .year {
+                                    text-align: left;
+                                }
+                                p {
+                                    padding-top: 0;
+                                }
+                            }
+                            .descrpn_second {
+                                .number {
+                                    text-align: left;
+                                }
+                                p {
+                                    padding-top: 0;
+                                }
+                            }
+                            .descrpn_third {
+                                .days {
+                                    text-align: left;
+                                }
+                                p {
+                                    padding-top: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .info_second_block {
+                .info_second_left {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    //Projects
+    .projects {
+        margin-top: 48px;
+        .container {
+            max-width: 100%;
+            padding: 0 16px;
+        }
+    }
+
+    //Reviews
+    .reviews {
+        margin-top: 48px;
+        .container {
+            max-width: 100%;
+            padding: 0 16px;
+        }
+    }
+
+    //Footer
+    .footer {
+        margin-top: 48px;
+        .container {
+            max-width: 100%;
+            padding: 0 16px;
+        }
+    }
 }

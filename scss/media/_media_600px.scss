@@ -30,4 +30,68 @@
             }
         }
     }
+
+    //Info
+    .info {
+        margin-top: 48px;
+        .container {
+            .info_second_block {
+                margin-top: 48px;
+                .info_second_right {
+                    .services {
+                        display: block;
+                        .services_right {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Projects
+    .projects {
+        .container {
+            .first_line_images {
+                .image {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+            .seconds_line_images {
+                .image {
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    //Reviews
+    .reviews {
+        .container {
+            .flex_container {
+                .card {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    //Modal
+    .modal {
+        .modal_dialog {
+            max-width: 350px;
+            margin-top: 70px;
+            .modal_content {
+                .modal_form {
+                    h3 {
+                        padding-top: 50px;
+                    }
+                }
+            }
+        }
+    }
 }
