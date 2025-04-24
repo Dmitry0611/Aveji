@@ -1,11 +1,30 @@
 
 @media (max-width: 1120px) {
 
-    // Header
+    //Header
     .header {
-        .container  {
+        .container {
             .flex_container {
-
+                .nav_header {
+                    ul {
+                        li {
+                            transform: none;
+                            transition: none;
+                            &:hover {
+                                transform: none;
+                                transition: none;
+                            }
+                            a {
+                                transition: none;
+                                opacity: 1;
+                                &:hover {
+                                    transition: none;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
