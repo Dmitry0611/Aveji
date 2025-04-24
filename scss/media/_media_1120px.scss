@@ -38,7 +38,12 @@
                     font-size: 50px;
                 }
                 .order_project {
+                    transform: none;
+                    transition: none;
                     &:hover {
+                        opacity: 1;
+                        transition: none;
+                        transform: none;
                         pointer-events: none;
                     }
                 }
