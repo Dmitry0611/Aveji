@@ -3,6 +3,28 @@
     .header {
         .container {
             padding: 0 50px;
+            .flex_container {
+                .nav_header {
+                    ul {
+                        li {
+                            transform: none;
+                            transition: none;
+                            &:hover {
+                                transform: none;
+                                transition: none;
+                            }
+                            a {
+                                transition: none;
+                                opacity: 1;
+                                &:hover {
+                                    transition: none;
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -16,6 +38,38 @@
                 }
                 .order_project_block {
                     flex-basis: 15%;
+                    .order_project {
+                        transform: none;
+                        transition: none;
+                        &:hover {
+                            opacity: 1;
+                            transition: none;
+                            transform: none;
+                            pointer-events: none;
+                        }
+                    }
+                }
+            }
+            .header_section_flex {
+                .header_section_left {
+                    img {
+                        transform: none;
+                        transition: none;
+                        &:hover {
+                            transform: none;
+                            transition: none;
+                        }
+                    }
+                }
+                .header_section_right {
+                    img {
+                        transform: none;
+                        transition: none;
+                        &:hover {
+                            transform: none;
+                            transition: none;
+                        }
+                    }
                 }
             }
         }
@@ -78,6 +132,16 @@
     .reviews {
         .container {
             padding: 0 50px;
+            .flex_container {
+                .card {
+                    transform: none;
+                    transition: none;
+                    &:hover {
+                        transform: none;
+                        transition: none;
+                    }
+                }
+            }
         }
     }
 
