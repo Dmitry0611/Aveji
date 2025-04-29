@@ -37,8 +37,10 @@ window.addEventListener('DOMContentLoaded', (e) => {
     }
 
     modalOpen.addEventListener('click', openModal);
+    modalOpen.addEventListener('touchstart', openModal);
 
     modalClose.addEventListener('click', closeModal);
+    modalClose.addEventListener('touchstart', closeModal);
 
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
