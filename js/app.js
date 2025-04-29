@@ -28,12 +28,14 @@ window.addEventListener('DOMContentLoaded', (e) => {
     function openModal () {
         modal.classList.add('show');
         modal.classList.remove('hide');
+        document.body.classList.add('modal_open');
         clearInterval(modalTimerId);
    };
 
     function closeModal () {
         modal.classList.add('hide');
         modal.classList.remove('show');
+        document.body.classList.remove('modal_open');
     }
 
     modalOpen.addEventListener('click', openModal);

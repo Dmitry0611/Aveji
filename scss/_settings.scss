@@ -30,3 +30,6 @@ h1, h2, h3, h4, p, ul {
 .hide {
     display: none;
 }
+body.modal_open {
+    overflow: hidden;
+}
