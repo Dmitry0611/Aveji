@@ -161,6 +161,26 @@
 
                     .footer_flex_right {
                         flex-basis: 100%;
+                        .footer_form {
+                            input {
+                                outline: none;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Modal
+    .modal {
+        .modal_dialog {
+            .modal_content {
+                .modal_form {
+                    input {
+                        outline: none;
+                        box-shadow: none;
                     }
                 }
             }
