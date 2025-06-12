@@ -166,6 +166,9 @@
                                 outline: none;
                                 box-shadow: none;
                                 border: none;
+                                -webkit-tap-highlight-color: transparent;
+                                -webkit-appearance: none;
+                                appearance: none;
                                 border-bottom: solid 1px #212529 !important;
                             }
                         }
@@ -184,6 +187,9 @@
                         outline: none;
                         box-shadow: none;
                         border: none;
+                        -webkit-tap-highlight-color: transparent;
+                        -webkit-appearance: none;
+                        appearance: none;
                         border-bottom: solid 1px #212529 !important;
                     }
                 }
