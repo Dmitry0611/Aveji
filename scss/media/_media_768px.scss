@@ -163,13 +163,31 @@
                         flex-basis: 100%;
                         .footer_form {
                             input {
+                                all: unset;
+                                display: block;
+                                margin-top: 16px;
+                                width: 100%;
+                                border: none;
+                                padding-bottom: 12.5px;
                                 outline: none;
-                                box-shadow: none;
+                                box-shadow: none !important;
                                 border: none;
                                 -webkit-tap-highlight-color: transparent;
                                 -webkit-appearance: none;
                                 appearance: none;
+                                background-color: transparent;
                                 border-bottom: solid 1px #212529 !important;
+
+                                &::placeholder {
+                                    font-family: "Roboto";
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    color: #212529;
+                                }
+
+                                &:first-child {
+                                    margin-top: 0;
+                                }
                             }
                         }
                     }
@@ -184,13 +202,26 @@
             .modal_content {
                 .modal_form {
                     input {
+                        all: unset;
+                        display: block;
+                        margin-top: 16px;
+                        margin-left: 40px;
+                        width: 80%;
                         outline: none;
-                        box-shadow: none;
+                        box-shadow: none !important;
                         border: none;
                         -webkit-tap-highlight-color: transparent;
                         -webkit-appearance: none;
                         appearance: none;
+                        background-color: transparent;
                         border-bottom: solid 1px #212529 !important;
+
+                        &::placeholder {
+                            font-family: "Roboto";
+                            font-weight: 400;
+                            font-size: 16px;
+                            color: #212529;
+                        }
                     }
                 }
             }
